@@ -1,14 +1,17 @@
-<link rel="import" href="../../bower_components/polymer/polymer.html">
-<link rel="import" href="../../bower_components/app-layout/app-header/app-header.html">
-<link rel="import" href="../../bower_components/app-layout/app-scroll-effects/effects/waterfall.html">
-<link rel="import" href="../../bower_components/app-layout/app-toolbar/app-toolbar.html">
-<link rel="import" href="../../bower_components/app-layout/helpers/helpers.html">
+<!-- Polymer -->
 <link rel="import" href="../../bower_components/app-route/app-location.html">
 <link rel="import" href="../../bower_components/app-route/app-route.html">
-<link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout.html">
-<link rel="import" href="../../bower_components/iron-media-query/iron-media-query.html">
+<link rel="import" href="../../bower_components/app-layout/app-drawer-layout/app-drawer-layout.html">
+<link rel="import" href="../../bower_components/app-layout/app-drawer/app-drawer.html">
+<link rel="import" href="../../bower_components/app-layout/app-scroll-effects/app-scroll-effects.html">
+<link rel="import" href="../../bower_components/app-layout/app-header/app-header.html">
+<link rel="import" href="../../bower_components/app-layout/app-header-layout/app-header-layout.html">
+<link rel="import" href="../../bower_components/app-layout/app-toolbar/app-toolbar.html">
+<link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="../../bower_components/iron-pages/iron-pages.html">
 <link rel="import" href="../../bower_components/iron-selector/iron-selector.html">
+
+<!-- HTML Explorer -->
 <link rel="import" href="../html-analytics/html-analytics.html">
 <link rel="import" href="../html-data/html-data.html">
 <!-- Since 'home' is the default route, eagerly load it. -->
@@ -16,26 +19,123 @@
 
 <dom-module id="html-app">
   <template>
-    <link rel="stylesheet" href="html-app.css">
-    <html-analytics key="UA-39334307-16"></html-analytics>
+    <style>
+      :host {
+        display: block;
+        --app-primary-color: #4285f4;
+        --app-secondary-color: black;
+      }
+      app-header {
+        background-color: var(--app-primary-color);
+        color: #fff;
+      }
+      app-header paper-icon-button {
+        --paper-icon-button-ink-color: white;
+      }
+      .drawer-list {
+        margin: 0 20px;
+      }
+      .drawer-list a {
+        display: block;
+        padding: 0 16px;
+        line-height: 40px;
+        text-decoration: none;
+        color: var(--app-secondary-color);
+      }
+      .drawer-list a.iron-selected {
+        color: black;
+        font-weight: bold;
+      }
+      .drawer-list a.subroute {
+        padding-left: 32px;
+      }
+    </style>
+
+    <!-- Routing -->
+    <app-location route="{{route}}"></app-location>
+    <app-route
+        route="{{route}}"
+        pattern="/:page"
+        data="{{routeData}}"
+        tail="{{subroute}}"></app-route>
+
+    <!-- Analytics -->
+    <!-- <html-analytics key="UA-39334307-16"></html-analytics> -->
+
+    <!-- Get data -->
     <html-data categories="{{categories}}"></html-data>
-    <h1>HTML Explorer</h1>
+
+    <!-- Drawer -->
+    <app-drawer-layout fullbleed>
+      <!-- Drawer content -->
+      <app-drawer>
+        <app-toolbar>&nbsp;</app-toolbar>
+        <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
+          <a name="html-home" href="/html-home">HTML</a>
+        </iron-selector>
+      </app-drawer>
+
+      <!-- Main content -->
+      <app-header-layout has-scrolling-region>
+        <app-header condenses reveals effects="waterfall">
+          <app-toolbar>
+            <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
+            <div title>HTML Explorer</div>
+          </app-toolbar>
+        </app-header>
+
+        <iron-pages role="main" selected="[[page]]" attr-for-selected="name">
+          <html-home name="html-home"></html-home>
+        </iron-pages>
+
+      </app-header-layout>
+    </app-drawer-layout>
   </template>
 
   <script>
     Polymer({
       is: 'html-app',
-      properties: {},
-      observers: [],
+      properties: {
+        page: {
+          type: String,
+          reflectToAttribute: true,
+          observer: 'pageChanged'
+        }
+      },
+      observers: [
+        'routeChanged(routeData.page)'
+      ],
       listeners: {},
 
+      /**
+       * Called when component is created
+       */
       created: function() {
         // Custom elements polyfill safe way to indicate an element has been upgraded.
         this.removeAttribute('unresolved');
       },
 
+      /**
+       * Called when component is ready
+       */
       ready: function() {
         console.log('html-app is running');
+      },
+
+      /**
+       * Called when route changes
+       */
+      routeChanged: function(page) {
+        this.page = page || 'html-home';
+      },
+
+      /**
+       * Called when page changes
+       */
+      pageChanged: function(page) {
+        // load page import on demand.
+        this.importHref(
+          this.resolveUrl(`../${page}/${page}.html`), null, null, true);
       }
     });
   </script>
