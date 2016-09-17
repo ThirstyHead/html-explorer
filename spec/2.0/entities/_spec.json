@@ -1,0 +1,45 @@
+{
+  "type": "entity",
+  "version": "2.0",
+  "reference": "9.7.1",
+  "title": "Numeric and Special Graphic Entity Set",
+  "description": "   The following table lists each of the characters included from the
+   Numeric and Special Graphic entity set, along with its name, syntax
+   for use, and description. This list is derived from `ISO Standard
+   8879:1986//ENTITIES Numeric and Special Graphic//EN'.  However, HTML
+   does not include for the entire entity set -- only the entities
+   listed below are included.
+
+    GLYPH   NAME    SYNTAX  DESCRIPTION
+    <       lt      &lt;    Less than sign
+    >       gt      &gt;    Greater than signn
+    &       amp     &amp;   Ampersand
+    \"       quot    &quot;  Double quote sign",
+
+  "entities": [
+    {
+      "character": "\"",
+      "reference": "&quot;",
+      "numeric": "&#34;",
+      "description": "Quote"
+    },
+    {
+      "character": "&",
+      "reference": "&amp;",
+      "numeric": "&#38;",
+      "description": "Ampersand"
+    },
+    {
+      "character": "<",
+      "reference": "&lt;",
+      "numeric": "&#60;",
+      "description": "Less than"
+    },
+    {
+      "character": ">",
+      "reference": "&gt;",
+      "numeric": "&#62;",
+      "description": "Greater than"
+    }
+  ]
+}

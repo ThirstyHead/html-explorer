@@ -4,8 +4,8 @@
   "reference": "",
   "title": "",
   "deprecated": false,
-  "sections": ["body"],
-  "structure": "inline",
+  "sections": ["body", "form"],
+  "structure": "form",
   "name": "html",
   "description": ""
 }

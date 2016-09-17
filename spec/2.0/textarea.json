@@ -1,0 +1,39 @@
+{
+  "type": "element",
+  "version": "2.0",
+  "reference": "8.1.4",
+  "title": "Text Area: TEXTAREA",
+  "deprecated": false,
+  "sections": ["body", "form"],
+  "structure": "form",
+  "name": "textarea",
+  "description": "   The <TEXTAREA> element represents a multi-line text field.
+   Attributes are:
+
+    COLS
+            the number of visible columns to display for the text
+            area, in characters.
+
+    NAME
+            Specifies the name of the form field.
+
+    ROWS
+            The number of visible rows to display for the text area,
+            in characters.
+
+    For example:
+
+    <TEXTAREA NAME=\"address\" ROWS=6 COLS=64>
+    HaL Computer Systems
+    1315 Dell Avenue
+    Campbell, California 95008
+    </TEXTAREA>
+
+   The content of the <TEXTAREA> element is the field's initial value.
+
+   Typically, the ROWS and COLS attributes determine the visible
+   dimension of the field in characters. The field is typically rendered
+   in a fixed-width font. HTML user agents should allow text to extend
+   beyond these limits by scrolling as needed.
+"
+}
