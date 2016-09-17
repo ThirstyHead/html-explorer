@@ -1,0 +1,15 @@
+{
+  "type": "element",
+  "version": "2.0",
+  "reference": "5.7.1.7",
+  "title": "Variable: VAR",
+  "deprecated": false,
+  "sections": ["body"],
+  "structure": "inline",
+  "name": "var",
+  "description": "      The <VAR> element indicates a placeholder variable, typically
+      rendered as italic. For example:
+
+      Type <SAMP>html-check <VAR>file</VAR> | more</SAMP>
+      to check <VAR>file</VAR> for markup errors."
+}

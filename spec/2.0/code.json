@@ -1,0 +1,18 @@
+{
+  "type": "element",
+  "version": "2.0",
+  "reference": "5.7.1.2",
+  "title": "Code: CODE",
+  "deprecated": false,
+  "sections": ["body"],
+  "structure": "inline",
+  "name": "code",
+  "description": "      The <CODE> element indicates an example of code, typically
+      rendered in a mono-spaced font. The <CODE> element is intended for
+      short words or phrases of code; the <PRE> block structuring
+      element (5.5.2, \"Preformatted Text: PRE\") is more appropriate
+       for multiple-line listings. For example:
+
+      The expression <code>x += 1</code>
+      is short for <code>x = x + 1</code>."
+}

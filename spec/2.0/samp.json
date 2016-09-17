@@ -1,0 +1,14 @@
+{
+  "type": "element",
+  "version": "2.0",
+  "reference": "5.7.1.5",
+  "title": "Sample: SAMP",
+  "deprecated": false,
+  "sections": ["body"],
+  "structure": "inline",
+  "name": "samp",
+  "description": "      The <SAMP> element indicates a sequence of literal characters,
+      typically rendered in a mono-spaced font. For example:
+
+      The only word containing the letters <samp>mt</samp> is dreamt."
+}
