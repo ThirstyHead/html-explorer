@@ -1,0 +1,49 @@
+{
+  "type": "element",
+  "version": "2.0",
+  "reference": "5.4",
+  "title": "Headings: H1 ... H6",
+  "deprecated": false,
+  "sections": ["body"],
+  "name": "h3",
+  "description": "   The six heading elements, <H1> through <H6>, denote section headings.
+   Although the order and occurrence of headings is not constrained by
+   the HTML DTD, documents should not skip levels (for example, from H1
+   to H3), as converting such documents to other representations is
+   often problematic.
+
+   Example of use:
+
+    <H1>This is a heading</H1>
+    Here is some text
+    <H2>Second level heading</H2>
+    Here is some more text.
+
+    Typical renderings are:
+
+    H1
+            Bold, very-large font, centered. One or two blank lines
+            above and below.
+
+    H2
+            Bold, large font, flush-left. One or two blank lines
+            above and below.
+
+    H3
+            Italic, large font, slightly indented from the left
+            margin. One or two blank lines above and below.
+
+    H4
+            Bold, normal font, indented more than H3. One blank line
+            above and below.
+
+    H5
+            Italic, normal font, indented as H4. One blank line
+            above.
+
+    H6
+            Bold, indented same as normal text, more than H5. One
+            blank line above.
+
+    "
+}
