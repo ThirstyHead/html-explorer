@@ -5,6 +5,7 @@
   "title": "Headings: H1 ... H6",
   "deprecated": false,
   "sections": ["body"],
+  "structure": "block",
   "name": "h5",
   "description": "   The six heading elements, <H1> through <H6>, denote section headings.
    Although the order and occurrence of headings is not constrained by

@@ -3,8 +3,9 @@
   "version": "2.0",
   "reference": "5.2.2",
   "title": "Base Address: BASE",
-  "deprecated": false,  
+  "deprecated": false,
   "sections": ["head"],
+  "structure": "invisible",
   "name": "base",
   "description": "   The optional <BASE> element provides a base address for interpreting
    relative URLs when the document is read out of context (see 7,

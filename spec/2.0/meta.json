@@ -3,8 +3,9 @@
   "version": "2.0",
   "reference": "5.2.5",
   "title": "Associated Meta-information: META",
-  "deprecated": false,  
+  "deprecated": false,
   "sections": ["head"],
+  "structure": "invisible",
   "name": "meta",
   "description": "The <META> element is an extensible container for use in identifying
    specialized document meta-information.  Meta-information has two main

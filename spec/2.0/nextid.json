@@ -3,8 +3,9 @@
   "version": "2.0",
   "reference": "5.2.6",
   "title": "Next Id: NEXTID",
-  "deprecated": true,  
+  "deprecated": true,
   "sections": ["head"],
+  "structure": "invisible",
   "name": "nextid",
   "description": "The <NEXTID> element is included for historical reasons only.  HTML
    documents should not contain <NEXTID> elements.

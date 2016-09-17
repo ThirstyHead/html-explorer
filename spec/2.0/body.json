@@ -5,6 +5,7 @@
   "title": "Body: BODY",
   "deprecated": false,
   "sections": ["html"],
+  "structure": "block",
   "name": "body",
   "description": "The <BODY> element contains the text flow of the document, including
    headings, paragraphs, lists, etc.
