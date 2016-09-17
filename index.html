@@ -11,7 +11,7 @@
   <meta name="theme-color" content="#fff">
   <link rel="manifest" href="/manifest.json">
 
-  <link rel="import" href="/src/html-app/html-app.html" async>
+  <link rel="import" href="src/html-app/html-app.html" async>
 
   <style>
 
@@ -42,7 +42,7 @@
 </head>
 <body>
 
-  <html-app unresolved>HTML Explorer</html-app>
+  <html-app unresolved>Loading...</html-app>
 
   <script>
     window.performance && performance.mark && performance.mark('index.html');
@@ -57,7 +57,7 @@
       } else {
         // polyfill the platform!
         var e = document.createElement('script');
-        e.src = '/bower_components/webcomponentsjs/webcomponents-lite.min.js';
+        e.src = 'bower_components/webcomponentsjs/webcomponents-lite.min.js';
         document.body.appendChild(e);
       }
     })();
