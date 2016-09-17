@@ -1,0 +1,28 @@
+{
+  "type": "element",
+  "version": "2.0",
+  "reference": "5.5.4",
+  "title": "Block Quote: BLOCKQUOTE",
+  "deprecated": false,
+  "sections": ["body"],
+  "structure": "block",
+  "name": "blockquote",
+  "description": "   The <BLOCKQUOTE> element contains text quoted from another source.
+
+   A typical rendering might be a slight extra left and right indent,
+   and/or italic font. The <BLOCKQUOTE> typically provides space above
+   and below the quote.
+
+   Single-font rendition may reflect the quotation style of Internet
+   mail by putting a vertical line of graphic characters, such as the
+   greater than symbol (>), in the left margin.
+
+   Example of use:
+
+    I think the play ends
+    <BLOCKQUOTE>
+    <P>Soft you now, the fair Ophelia. Nymph, in thy orisons, be all
+    my sins remembered.
+    </BLOCKQUOTE>
+    but I am not sure."
+}

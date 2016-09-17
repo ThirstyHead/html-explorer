@@ -1,0 +1,25 @@
+{
+  "type": "element",
+  "version": "2.0",
+  "reference": "5.5.3",
+  "title": "Address: ADDRESS",
+  "deprecated": false,
+  "sections": ["body"],
+  "structure": "block",
+  "name": "address",
+  "description": "   The <ADDRESS> element contains such information as address, signature
+   and authorship, often at the beginning or end of the body of a
+   document.
+
+   Typically, the <ADDRESS> element is rendered in an italic typeface
+   and may be indented.
+
+   Example of use:
+
+    <ADDRESS>
+    Newsletter editor<BR>
+    J.R. Brown<BR>
+    JimquickPost News, Jimquick, CT 01234<BR>
+    Tel (123) 456 7890
+    </ADDRESS>"
+}

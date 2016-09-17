@@ -1,0 +1,26 @@
+{
+  "type": "element",
+  "version": "2.0",
+  "reference": "5.5.1",
+  "title": "Paragraph: P",
+  "deprecated": false,
+  "sections": ["body"],
+  "structure": "block",
+  "name": "p",
+  "description": "   The <P> element indicates a paragraph. The exact indentation, leading
+   space, etc. of a paragraph is not specified and may be a function of
+   other tags, style sheets, etc.
+
+   Typically, paragraphs are surrounded by a vertical space of one line
+   or half a line. The first line in a paragraph is indented in some
+   cases.
+
+   Example of use:
+
+    <H1>This Heading Precedes the Paragraph</H1>
+    <P>This is the text of the first paragraph.
+    <P>This is the text of the second paragraph. Although you do not
+    need to start paragraphs on new lines, maintaining this
+    convention facilitates document maintenance.</P>
+    <P>This is the text of a third paragraph.</P>"
+}

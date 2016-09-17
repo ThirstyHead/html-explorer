@@ -4,7 +4,7 @@
   "reference": "",
   "title": "",
   "deprecated": false,
-  "sections": [],
+  "sections": ["body"],
   "structure": "block",
   "name": "html",
   "description": ""

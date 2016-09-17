@@ -1,0 +1,60 @@
+{
+  "type": "element",
+  "version": "2.0",
+  "reference": "5.5.2",
+  "title": "Preformatted Text: PRE",
+  "deprecated": false,
+  "sections": ["body"],
+  "structure": "block",
+  "name": "pre",
+  "description": "   The <PRE> element represents a character cell block of text and is
+   suitable for text that has been formatted for a monospaced font.
+
+   The <PRE> tag may be used with the optional WIDTH attribute. The
+   WIDTH attribute specifies the maximum number of characters for a line
+   and allows the HTML user agent to select a suitable font and
+   indentation.
+
+   Within preformatted text:
+
+        * Line breaks within the text are rendered as a move to the
+        beginning of the next line.
+
+            NOTE - References to the \"beginning of a new line\"
+            do not imply that the renderer is forbidden from
+            using a constant left indent for rendering
+            preformatted text. The left indent may be
+            constrained by the width required.
+
+        * Anchor elements and phrase markup may be used.
+
+            NOTE - Constraints on the processing of <PRE>
+            content may limit or prevent the ability of the HTML
+            user agent to faithfully render phrase markup.
+
+        * Elements that define paragraph formatting (headings,
+        address, etc.) must not be used.
+
+            NOTE - Some historical documents contain <P> tags in
+            <PRE> elements. User agents are encouraged to treat
+            this as a line break. A <P> tag followed by a
+            newline character should produce only one line
+            break, not a line break plus a blank line.
+
+        * The horizontal tab character (code position 9 in the HTML
+        document character set) must be interpreted as the smallest
+        positive nonzero number of spaces which will leave the
+        number of characters so far on the line as a multiple of 8.
+        Documents should not contain tab characters, as they are not
+        supported consistently.
+
+    Example of use:
+
+    <PRE>
+    Line 1.
+           Line 2 is to the right of line 1.     <a href=\"abc\">abc</a>
+           Line 3 aligns with line 2.            <a href=\"def\">def</a>
+    </PRE>
+
+   "
+}
