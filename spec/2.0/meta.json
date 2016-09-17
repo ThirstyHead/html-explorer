@@ -1,0 +1,86 @@
+{
+  "type": "element",
+  "version": "2.0",
+  "reference": "5.2.5",
+  "title": "Associated Meta-information: META",
+  "sections": ["head"],
+  "name": "meta",
+  "description": "The <META> element is an extensible container for use in identifying
+   specialized document meta-information.  Meta-information has two main
+   functions:
+
+        * to provide a means to discover that the data set exists
+        and how it might be obtained or accessed; and
+
+        * to document the content, quality, and features of a data
+        set, indicating its fitness for use.
+
+   Each <META> element specifies a name/value pair. If multiple META
+   elements are provided with the same name, their combined contents--
+   concatenated as a comma-separated list--is the value associated with
+   that name.
+
+        NOTE - The <META> element should not be used where a
+        specific element, such as <TITLE>, would be more
+        appropriate. Rather than a <META> element with a URI as
+        the value of the CONTENT attribute, use a <LINK>
+        element.
+
+   HTTP servers may read the content of the document <HEAD> to generate
+   header fields corresponding to any elements defining a value for the
+   attribute HTTP-EQUIV.
+
+        NOTE - The method by which the server extracts document
+        meta-information is unspecified and not mandatory. The
+        <META> element only provides an extensible mechanism for
+        identifying and embedding document meta-information --
+        how it may be used is up to the individual server
+        implementation and the HTML user agent.
+
+  Attributes of the META element:
+
+      HTTP-EQUIV
+              binds the element to an HTTP header field. An HTTP
+              server may use this information to process the document.
+              In particular, it may include a header field in the
+              responses to requests for this document: the header name
+              is taken from the HTTP-EQUIV attribute value, and the
+              header value is taken from the value of the CONTENT
+              attribute. HTTP header names are not case sensitive.
+
+      NAME
+              specifies the name of the name/value pair. If not
+              present, HTTP-EQUIV gives the name.
+
+      CONTENT
+              specifies the value of the name/value pair.
+
+      Examples
+
+      If the document contains:
+
+      <META HTTP-EQUIV=\"Expires\"
+            CONTENT=\"Tue, 04 Dec 1993 21:29:02 GMT\">
+      <meta http-equiv=\"Keywords\" CONTENT=\"Fred\">
+      <META HTTP-EQUIV=\"Reply-to\"
+            content=\"fielding@ics.uci.edu (Roy Fielding)\">
+      <Meta Http-equiv=\"Keywords\" CONTENT=\"Barney\">
+
+      then the server may include the following header fields:
+
+      Expires: Tue, 04 Dec 1993 21:29:02 GMT
+      Keywords: Fred, Barney
+      Reply-to: fielding@ics.uci.edu (Roy Fielding)
+
+      as part of the HTTP response to a `GET' or `HEAD' request for
+      that document.
+
+      An HTTP server must not use the <META> element to form an HTTP
+      response header unless the HTTP-EQUIV attribute is present.
+
+      An HTTP server may disregard any <META> elements that specify
+      information controlled by the HTTP server, for example `Server',
+
+      `Date', and `Last-modified'.
+"
+}

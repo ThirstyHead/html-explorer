@@ -1,0 +1,17 @@
+{
+  "type": "element",
+  "version": "2.0",
+  "reference": "5.2",
+  "title": "Head: HEAD",
+  "sections": ["html"],
+  "name": "head",
+  "description": "The head of an HTML document is an unordered collection of
+   information about the document. For example:
+
+    <!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">
+    <HEAD>
+    <TITLE>Introduction to HTML</TITLE>
+    </HEAD>
+    ...
+"
+}

@@ -2,6 +2,12 @@
   "version": "2.0",
   "entities": [
     {
+      "character": "\"",
+      "reference": "&quot;",
+      "numeric": "&#34;",
+      "description": "Quote"
+    },
+    {
       "character": "&",
       "reference": "&amp;",
       "numeric": "&#38;",

@@ -1,0 +1,16 @@
+{
+  "type": "element",
+  "version": "2.0",
+  "reference": "5.2.4",
+  "title": "Link: LINK",
+  "sections": ["head"],
+  "name": "link",
+  "description": "The <LINK> element represents a hyperlink (see 7, \"Hyperlinks\").  Any
+   number of LINK elements may occur in the <HEAD> element of an HTML
+   document. It has the same attributes as the <A> element (see 5.7.3,
+   \"Anchor: A\").
+
+   The <LINK> element is typically used to indicate authorship, related
+   indexes and glossaries, older or more recent versions, document
+   hierarchy, associated resources such as style sheets, etc."
+}

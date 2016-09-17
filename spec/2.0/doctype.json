@@ -1,4 +1,45 @@
 {
   "version": "2.0",
-  "doctype": "<!DOCTYPE html PUBLIC \"-//IETF//DTD HTML 2.0//EN\">"
+  "reference": "3.3. HTML Public Text Identifiers",
+  "doctypes": [
+    {
+      "section": "9.1",
+      "title": "HTML DTD",
+      "notes": "This document type declaration refers to the HTML DTD in 9.1, \"HTML
+   DTD\".",
+      "doctype": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">"
+    },
+    {
+      "section": "9.1",
+      "title": "HTML DTD",
+      "notes": "This document type declaration also refers to the HTML DTD which
+   appears in 9.1, \"HTML DTD\".",
+      "doctype": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0 Level 2//EN\">"
+    },
+    {
+      "section": "9.3",
+      "title": "Level 1 HTML DTD",
+      "notes": "This document type declaration refers to the level 1 HTML DTD in 9.3,
+   \"Level 1 HTML DTD\". Form elements must not occur in level 1
+   documents.",
+      "doctype": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0 Level 2//EN\">"
+    },
+    {
+      "section": "9.2",
+      "title": "Strict HTML DTD",
+      "notes": "These two document type declarations refer to the HTML DTD in 9.2,
+   \"Strict HTML DTD\" and 9.4, \"Strict Level 1 HTML DTD\". They refer to
+   the more structurally rigid definition of HTML.",
+      "doctype": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0 Strict//EN\">"
+    },
+    {
+      "section": "9.4",
+      "title": "Strict Level 1 HTML DTD",
+      "notes": "These two document type declarations refer to the HTML DTD in 9.2,
+   \"Strict HTML DTD\" and 9.4, \"Strict Level 1 HTML DTD\". They refer to
+   the more structurally rigid definition of HTML.",
+      "doctype": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0 Strict Level 1//EN\">"
+    },
+
+  ]
 }
