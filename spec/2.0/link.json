@@ -3,6 +3,7 @@
   "version": "2.0",
   "reference": "5.2.4",
   "title": "Link: LINK",
+  "deprecated": false,  
   "sections": ["head"],
   "name": "link",
   "description": "The <LINK> element represents a hyperlink (see 7, \"Hyperlinks\").  Any

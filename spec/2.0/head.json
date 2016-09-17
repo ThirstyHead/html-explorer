@@ -3,6 +3,7 @@
   "version": "2.0",
   "reference": "5.2",
   "title": "Head: HEAD",
+  "deprecated": false,  
   "sections": ["html"],
   "name": "head",
   "description": "The head of an HTML document is an unordered collection of

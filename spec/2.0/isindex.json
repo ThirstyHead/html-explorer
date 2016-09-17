@@ -3,6 +3,7 @@
   "version": "2.0",
   "reference": "5.2.3",
   "title": "Keyword Index: ISINDEX",
+  "deprecated": false,
   "sections": ["head"],
   "name": "isindex",
   "description": "The <ISINDEX> element indicates that the user agent should allow the
