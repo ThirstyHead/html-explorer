@@ -1,0 +1,23 @@
+{
+  "version": "2.0",
+  "entities": [
+    {
+      "character": "&",
+      "reference": "&amp;",
+      "numeric": "&#38;",
+      "description": "Ampersand"
+    },
+    {
+      "character": "<",
+      "reference": "&lt;",
+      "numeric": "&#60;",
+      "description": "Less than"
+    },
+    {
+      "character": ">",
+      "reference": "&gt;",
+      "numeric": "&#62;",
+      "description": "Greater than"
+    }
+  ]
+}
