@@ -1,0 +1,23 @@
+{
+  "type": "element",
+  "version": "2.0",
+  "reference": "5.6.4",
+  "title": "Menu List: MENU",
+  "deprecated": false,
+  "sections": ["body"],
+  "structure": "list",
+  "name": "menu",
+  "description": "   The <MENU> element is a list of items with typically one line per
+   item. The menu list style is typically more compact than the style of
+   an unordered list.
+
+   The content of a <MENU> element is a sequence of <LI> elements.
+   Nested block elements are not allowed in the content of <MENU>
+   elements. For example:
+
+    <MENU>
+    <LI>First item in the list.
+    <LI>Second item in the list.
+    <LI>Third item in the list.
+    </MENU>"
+}

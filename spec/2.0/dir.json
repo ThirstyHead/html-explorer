@@ -1,0 +1,23 @@
+{
+  "type": "element",
+  "version": "2.0",
+  "reference": "5.6.3",
+  "title": "Directory List: DIR",
+  "deprecated": false,
+  "sections": ["body"],
+  "structure": "list",
+  "name": "dir",
+  "description": "   The <DIR> element is similar to the <UL> element. It represents a
+   list of short items, typically up to 20 characters each. Items in a
+   directory list may be arranged in columns, typically 24 characters
+   wide.
+
+   The content of a <DIR> element is a sequence of <LI> elements.
+   Nested block elements are not allowed in the content of <DIR>
+   elements. For example:
+
+    <DIR>
+    <LI>A-H<LI>I-M
+    <LI>M-R<LI>S-Z
+    </DIR>"
+}

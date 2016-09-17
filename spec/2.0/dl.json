@@ -1,0 +1,44 @@
+{
+  "type": "element",
+  "version": "2.0",
+  "reference": "5.6.5",
+  "title": "Definition List: DL, DT, DD",
+  "deprecated": false,
+  "sections": ["body"],
+  "structure": "list",
+  "name": "dl",
+  "description": "   A definition list is a list of terms and corresponding definitions.
+   Definition lists are typically formatted with the term flush-left and
+   the definition, formatted paragraph style, indented after the term.
+
+   The content of a <DL> element is a sequence of <DT> elements and/or
+   <DD> elements, usually in pairs. Multiple <DT> may be paired with a
+   single <DD> element. Documents should not contain multiple
+   consecutive <DD> elements.
+
+   Example of use:
+
+    <DL>
+    <DT>Term<DD>This is the definition of the first term.
+    <DT>Term<DD>This is the definition of the second term.
+    </DL>
+
+   If the DT term does not fit in the DT column (typically one third of
+   the display area), it may be extended across the page with the DD
+   section moved to the next line, or it may be wrapped onto successive
+   lines of the left hand column.
+
+   The optional COMPACT attribute suggests that a compact rendering be
+   used, because the list items are small and/or the entire list is
+   large.
+
+   Unless the COMPACT attribute is present, an HTML user agent may leave
+   white space between successive DT, DD pairs. The COMPACT attribute
+   may also reduce the width of the left-hand (DT) column.
+
+    <DL COMPACT>
+    <DT>Term<DD>This is the first definition in compact format.
+    <DT>Term<DD>This is the second definition in compact format.
+    </DL>
+"
+}

@@ -5,7 +5,7 @@
   "title": "",
   "deprecated": false,
   "sections": ["body"],
-  "structure": "block",
+  "structure": "list",
   "name": "html",
   "description": ""
 }

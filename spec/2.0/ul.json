@@ -1,0 +1,22 @@
+{
+  "type": "element",
+  "version": "2.0",
+  "reference": "5.6.1",
+  "title": "Unordered List: UL, LI",
+  "deprecated": false,
+  "sections": ["body"],
+  "structure": "list",
+  "name": "ul",
+  "description": "   The <UL> represents a list of items -- typically rendered as a
+   bulleted list.
+
+   The content of a <UL> element is a sequence of <LI> elements.  For
+   example:
+
+    <UL>
+    <LI>First list item
+    <LI>Second list item
+     <p>second paragraph of second item
+    <LI>Third list item
+    </UL>"
+}

@@ -1,0 +1,81 @@
+{
+  "type": "element",
+  "version": "2.0",
+  "reference": "5.6.1",
+  "title": "Unordered List: UL, LI",
+  "deprecated": false,
+  "sections": ["body", "ul", "ol", "dir"],
+  "structure": "list",
+  "name": "li",
+  "description": "
+   -- UL --
+   The <UL> represents a list of items -- typically rendered as a
+   bulleted list.
+
+   The content of a <UL> element is a sequence of <LI> elements.  For
+   example:
+
+    <UL>
+    <LI>First list item
+    <LI>Second list item
+     <p>second paragraph of second item
+    <LI>Third list item
+    </UL>
+
+
+
+  -- OL --
+  The <OL> element represents an ordered list of items, sorted by
+  sequence or order of importance. It is typically rendered as a
+  numbered list.
+
+  The content of a <OL> element is a sequence of <LI> elements.  For
+  example:
+
+   <OL>
+   <LI>Click the Web button to open URI window.
+   <LI>Enter the URI number in the text field of the Open URI
+   window. The Web document you specified is displayed.
+     <ol>
+      <li>substep 1
+      <li>substep 2
+     </ol>
+   <LI>Click highlighted text to move from one link to another.
+   </OL>
+
+
+
+  -- DIR --
+  The <DIR> element is similar to the <UL> element. It represents a
+  list of short items, typically up to 20 characters each. Items in a
+  directory list may be arranged in columns, typically 24 characters
+  wide.
+
+  The content of a <DIR> element is a sequence of <LI> elements.
+  Nested block elements are not allowed in the content of <DIR>
+  elements. For example:
+
+   <DIR>
+   <LI>A-H<LI>I-M
+   <LI>M-R<LI>S-Z
+   </DIR>
+
+
+
+  -- MENU --
+  The <MENU> element is a list of items with typically one line per
+  item. The menu list style is typically more compact than the style of
+  an unordered list.
+
+  The content of a <MENU> element is a sequence of <LI> elements.
+  Nested block elements are not allowed in the content of <MENU>
+  elements. For example:
+
+   <MENU>
+   <LI>First item in the list.
+   <LI>Second item in the list.
+   <LI>Third item in the list.
+   </MENU>
+
+    "
+}

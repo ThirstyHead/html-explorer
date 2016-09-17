@@ -1,0 +1,28 @@
+{
+  "type": "element",
+  "version": "2.0",
+  "reference": "5.6.2",
+  "title": "Ordered List: OL",
+  "deprecated": false,
+  "sections": ["body"],
+  "structure": "list",
+  "name": "ol",
+  "description": "   The <OL> element represents an ordered list of items, sorted by
+   sequence or order of importance. It is typically rendered as a
+   numbered list.
+
+   The content of a <OL> element is a sequence of <LI> elements.  For
+   example:
+
+    <OL>
+    <LI>Click the Web button to open URI window.
+    <LI>Enter the URI number in the text field of the Open URI
+    window. The Web document you specified is displayed.
+      <ol>
+       <li>substep 1
+       <li>substep 2
+      </ol>
+    <LI>Click highlighted text to move from one link to another.
+    </OL>
+   "
+}
