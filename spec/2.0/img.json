@@ -1,0 +1,66 @@
+{
+  "type": "element",
+  "version": "2.0",
+  "reference": "5.10",
+  "title": "Image: IMG",
+  "deprecated": false,
+  "sections": ["body"],
+  "structure": "inline",
+  "name": "img",
+  "description": "   The <IMG> element refers to an image or icon via a hyperlink (see
+   7.3, \"Simultaneous Presentation of Image Resources\").
+
+   HTML user agents may process the value of the ALT attribute as an
+   alternative to processing the image resource indicated by the SRC
+   attribute.
+
+      NOTE - Some HTML user agents can process graphics linked via
+      anchors, but not <IMG> graphics. If a graphic is essential, it
+      should be referenced from an <A> element rather than an <IMG>
+      element. If the graphic is not essential, then the <IMG> element
+      is appropriate.
+
+   Attributes of the <IMG> element:
+
+    ALIGN
+            alignment of the image with respect to the text
+            baseline.
+
+                * `TOP' specifies that the top of the image aligns
+                with the tallest item on the line containing the
+                image.
+
+                * `MIDDLE' specifies that the center of the image
+                aligns with the baseline of the line containing the
+                image.
+
+                * `BOTTOM' specifies that the bottom of the image
+                aligns with the baseline of the line containing the
+                image.
+
+    ALT
+            text to use in place of the referenced image resource,
+            for example due to processing constraints or user
+            preference.
+
+    ISMAP
+            indicates an image map (see 7.6, \"Image Maps\").
+
+    SRC
+            specifies the URI of the image resource.
+
+                NOTE - In practice, the media types of image
+                resources are limited to a few raster graphic
+                formats: typically `image/gif', `image/jpeg'. In
+                particular, `text/html' resources are not
+                intended to be used as image resources.
+
+    Examples of use:
+
+    <IMG SRC=\"triangle.xbm\" ALT=\"Warning:\"> Be sure
+    to read these instructions.
+
+    <a href=\"http://machine/htbin/imagemap/sample\">
+    <IMG SRC=\"sample.xbm\" ISMAP>
+    </a>"
+}

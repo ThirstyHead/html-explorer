@@ -1,0 +1,16 @@
+{
+  "type": "element",
+  "version": "2.0",
+  "reference": "5.9",
+  "title": "Horizontal Rule: HR",
+  "deprecated": false,
+  "sections": ["body"],
+  "structure": "block",
+  "name": "hr",
+  "description": "   The <HR> element is a divider between sections of text; typically a
+   full width horizontal rule or equivalent graphic.  For example:
+
+    <HR>
+    <ADDRESS>February 8, 1995, CERN</ADDRESS>
+    </BODY>"
+}

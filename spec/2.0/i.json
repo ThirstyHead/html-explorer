@@ -1,0 +1,12 @@
+{
+  "type": "element",
+  "version": "2.0",
+  "reference": "5.7.2.2",
+  "title": "Italic: I",
+  "deprecated": false,
+  "sections": ["body"],
+  "structure": "inline",
+  "name": "i",
+  "description": "   The <I> element indicates italic text. Where italic typography is
+   unavailable, an alternative representation may be used."
+}

@@ -1,0 +1,13 @@
+{
+  "type": "element",
+  "version": "2.0",
+  "reference": "5.7.2.3",
+  "title": "Teletype: TT",
+  "deprecated": false,
+  "sections": ["body"],
+  "structure": "inline",
+  "name": "tt",
+  "description": "   The <TT> element indicates teletype (monospaced )text. Where a
+   teletype font is unavailable, an alternative representation may be
+   used."
+}

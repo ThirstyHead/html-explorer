@@ -1,0 +1,62 @@
+{
+  "type": "element",
+  "version": "2.0",
+  "reference": "5.7.3",
+  "title": "Anchor: A",
+  "deprecated": false,
+  "sections": ["body"],
+  "structure": "inline",
+  "name": "a",
+  "description": "   The <A> element indicates a hyperlink anchor (see 7, \"Hyperlinks\").
+   At least one of the NAME and HREF attributes should be present.
+   Attributes of the <A> element:
+
+    HREF
+            gives the URI of the head anchor of a hyperlink.
+
+    NAME
+            gives the name of the anchor, and makes it available as
+            a head of a hyperlink.
+
+    TITLE
+            suggests a title for the destination resource --
+            advisory only. The TITLE attribute may be used:
+
+                * for display prior to accessing the destination
+                resource, for example, as a margin note or on a
+                small box while the mouse is over the anchor, or
+                while the document is being loaded;
+
+                * for resources that do not include a title, such as
+                graphics, plain text and Gopher menus, for use as a
+                window title.
+
+    REL
+            The REL attribute gives the relationship(s) described by
+            the hyperlink. The value is a whitespace separated list
+            of relationship names. The semantics of link
+            relationships are not specified in this document.
+
+    REV
+            same as the REL attribute, but the semantics of the
+            relationship are in the reverse direction. A link from A
+            to B with REL=\"X\" expresses the same relationship as a
+            link from B to A with REV=\"X\". An anchor may have both
+            REL and REV attributes.
+
+    URN
+            specifies a preferred, more persistent identifier for
+            the head anchor of the hyperlink. The syntax and
+            semantics of the URN attribute are not yet specified.
+
+    METHODS
+            specifies methods to be used in accessing the
+            destination, as a whitespace-separated list of names.
+            The set of applicable names is a function of the scheme
+            of the URI in the HREF attribute. For similar reasons as
+            for the TITLE attribute, it may be useful to include the
+            information in advance in the link. For example, the
+            HTML user agent may chose a different rendering as a
+            function of the methods allowed; for example, something
+            that is searchable may get a different icon."
+}
